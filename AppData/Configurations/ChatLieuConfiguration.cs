@@ -17,6 +17,7 @@ namespace AppData.Configurations
             builder.HasKey(x => x.ID);
             builder.Property(x => x.Ten).HasColumnType("nvarchar(20)");
             builder.Property(x => x.TrangThai).HasColumnType("int");
+            builder.HasData(new ChatLieu() { ID = new Guid("273C786D-D0B6-4CBE-8531-6DC997532659"), Ten = "Vải", TrangThai = 1 });
         }
     }
 }

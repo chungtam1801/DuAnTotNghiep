@@ -4,6 +4,7 @@ using AppData.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AppData.Migrations
 {
     [DbContext(typeof(AssignmentDBContext))]
-    partial class AssignmentDBContextModelSnapshot : ModelSnapshot
+    [Migration("20240515012312_SeedingDataSP")]
+    partial class SeedingDataSP
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -48,24 +50,6 @@ namespace AppData.Migrations
                     b.HasIndex("IDSanPham");
 
                     b.ToTable("Anh", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            ID = new Guid("3da49d96-68bf-4618-8574-01ece60aea75"),
-                            DuongDan = "1953198247766_ef28dde5aa_o_211f9ee337bc4c1fb7c5933b8a84a38a_compact242657303.webp",
-                            IDMauSac = new Guid("fc23a8df-f7cf-4863-85c7-3781ac1873f7"),
-                            IDSanPham = new Guid("e3515cb9-f3af-4fb3-a100-50ecf0aa81d3"),
-                            TrangThai = 1
-                        },
-                        new
-                        {
-                            ID = new Guid("a539976a-21e2-4930-bd5d-9c3dd6562679"),
-                            DuongDan = "1953197790942_bf4bc7352a_o_9c76cdf68bfc41c2936861828ab4003c_master242657308.webp",
-                            IDMauSac = new Guid("579090a3-3f65-4cec-a71e-a756e9ce2f85"),
-                            IDSanPham = new Guid("e3515cb9-f3af-4fb3-a100-50ecf0aa81d3"),
-                            TrangThai = 1
-                        });
                 });
 
             modelBuilder.Entity("AppData.Models.ChatLieu", b =>
@@ -202,7 +186,7 @@ namespace AppData.Migrations
                             IDMauSac = new Guid("579090a3-3f65-4cec-a71e-a756e9ce2f85"),
                             IDSanPham = new Guid("e3515cb9-f3af-4fb3-a100-50ecf0aa81d3"),
                             Ma = "SP1DOS",
-                            NgayTao = new DateTime(2024, 5, 15, 8, 31, 34, 899, DateTimeKind.Local).AddTicks(5271),
+                            NgayTao = new DateTime(2024, 5, 15, 8, 23, 12, 178, DateTimeKind.Local).AddTicks(8860),
                             SoLuong = 100,
                             TrangThai = 1
                         },
@@ -214,7 +198,7 @@ namespace AppData.Migrations
                             IDMauSac = new Guid("579090a3-3f65-4cec-a71e-a756e9ce2f85"),
                             IDSanPham = new Guid("e3515cb9-f3af-4fb3-a100-50ecf0aa81d3"),
                             Ma = "SP1DOL",
-                            NgayTao = new DateTime(2024, 5, 15, 8, 31, 34, 899, DateTimeKind.Local).AddTicks(5287),
+                            NgayTao = new DateTime(2024, 5, 15, 8, 23, 12, 178, DateTimeKind.Local).AddTicks(8875),
                             SoLuong = 100,
                             TrangThai = 2
                         },
@@ -226,7 +210,7 @@ namespace AppData.Migrations
                             IDMauSac = new Guid("fc23a8df-f7cf-4863-85c7-3781ac1873f7"),
                             IDSanPham = new Guid("e3515cb9-f3af-4fb3-a100-50ecf0aa81d3"),
                             Ma = "SP1DENL",
-                            NgayTao = new DateTime(2024, 5, 15, 8, 31, 34, 899, DateTimeKind.Local).AddTicks(5292),
+                            NgayTao = new DateTime(2024, 5, 15, 8, 23, 12, 178, DateTimeKind.Local).AddTicks(8879),
                             SoLuong = 100,
                             TrangThai = 2
                         },
@@ -238,7 +222,7 @@ namespace AppData.Migrations
                             IDMauSac = new Guid("579090a3-3f65-4cec-a71e-a756e9ce2f85"),
                             IDSanPham = new Guid("e3515cb9-f3af-4fb3-a100-50ecf0aa81d3"),
                             Ma = "SP1DOM",
-                            NgayTao = new DateTime(2024, 5, 15, 8, 31, 34, 899, DateTimeKind.Local).AddTicks(5295),
+                            NgayTao = new DateTime(2024, 5, 15, 8, 23, 12, 178, DateTimeKind.Local).AddTicks(8883),
                             SoLuong = 100,
                             TrangThai = 2
                         },
@@ -250,7 +234,7 @@ namespace AppData.Migrations
                             IDMauSac = new Guid("fc23a8df-f7cf-4863-85c7-3781ac1873f7"),
                             IDSanPham = new Guid("e3515cb9-f3af-4fb3-a100-50ecf0aa81d3"),
                             Ma = "SP1DENM",
-                            NgayTao = new DateTime(2024, 5, 15, 8, 31, 34, 899, DateTimeKind.Local).AddTicks(5298),
+                            NgayTao = new DateTime(2024, 5, 15, 8, 23, 12, 178, DateTimeKind.Local).AddTicks(8886),
                             SoLuong = 100,
                             TrangThai = 2
                         },
@@ -262,7 +246,7 @@ namespace AppData.Migrations
                             IDMauSac = new Guid("fc23a8df-f7cf-4863-85c7-3781ac1873f7"),
                             IDSanPham = new Guid("e3515cb9-f3af-4fb3-a100-50ecf0aa81d3"),
                             Ma = "SP1DENS",
-                            NgayTao = new DateTime(2024, 5, 15, 8, 31, 34, 899, DateTimeKind.Local).AddTicks(5302),
+                            NgayTao = new DateTime(2024, 5, 15, 8, 23, 12, 178, DateTimeKind.Local).AddTicks(8891),
                             SoLuong = 100,
                             TrangThai = 2
                         });
